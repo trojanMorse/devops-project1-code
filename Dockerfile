@@ -10,7 +10,7 @@ RUN apt upgrade -y
 
 RUN apt-get update && apt-get install apache2 -y
 
-COPY /var/lib/jenkins/workspace/test1/* /var/www/html/
+COPY /var/lib/jenkins/workspace/test1 /var/www/html/
 
 ENTRYPOINT apachectl -D FOREGROUND
 
